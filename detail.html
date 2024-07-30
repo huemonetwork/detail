@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBL EONONE COMPACT portable speaker</title>
+</head>
+
+<body>
+
+    #main head
+    <div style="background-color: #333; color: white; text-align: center; padding: 10px 0;">
+        <h1><span style="color: orange;">JBL</span> EONONE COMPACT portable speaker</h1>
+        <h2></h2>
+    </div>
+
+    <div
+        style="position: relative; width: 80%; max-width: 600px; margin: 0 auto; overflow: hidden; background-color: white;">
+        <div id="slides" style="display: flex; transition: transform 0.5s ease-in-out;">
+            <div style="min-width: 100%; box-sizing: border-box;">
+                <img src="http://tlworks.speedgabia.com/Thumb/akg/C1000S_thumb.jpg"
+                    alt="JBL EONONE COMPACT Portable Speaker 1" style="width: 100%; display: block;">
+            </div>
+            <div style="min-width: 100%; box-sizing: border-box;">
+                <img src="http://tlworks.speedgabia.com/Thumb/akg/C1000S_thumb.jpg"
+                    alt="JBL EONONE COMPACT Portable Speaker 2" style="width: 100%; display: block;">
+            </div>
+            <div style="min-width: 100%; box-sizing: border-box;">
+                <img src="http://tlworks.speedgabia.com/Thumb/akg/C1000S_thumb.jpg"
+                    alt="JBL EONONE COMPACT Portable Speaker 3" style="width: 100%; display: block;">
+            </div>
+            <div style="min-width: 100%; box-sizing: border-box;">
+                <img src="http://tlworks.speedgabia.com/Thumb/akg/C1000S_thumb.jpg"
+                    alt="JBL EONONE COMPACT Portable Speaker 4" style="width: 100%; display: block;">
+            </div>
+            <div style="min-width: 100%; box-sizing: border-box;">
+                <img src="http://tlworks.speedgabia.com/Thumb/akg/C1000S_thumb.jpg"
+                    alt="JBL EONONE COMPACT Portable Speaker 5" style="width: 100%; display: block;">
+            </div>
+        </div>
+        <button onclick="prevSlide()"
+            style="position: absolute; top: 50%; left: 0; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.5); border: none; color: white; padding: 10px; cursor: pointer;">❮</button>
+        <button onclick="nextSlide()"
+            style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.5); border: none; color: white; padding: 10px; cursor: pointer;">❯</button>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.getElementById('slides');
+        const totalSlides = document.querySelectorAll('#slides > div').length;
+
+        function updateSlidePosition() {
+            slides.style.transform = 'translateX(' + (-currentIndex * 100) + '%)';
+        }
+
+        function nextSlide() {
+            if (currentIndex < totalSlides - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            updateSlidePosition();
+        }
+
+        function prevSlide() {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = totalSlides - 1;
+            }
+            updateSlidePosition();
+        }
+    </script>
+
+
+    <div style="margin: 20px auto; width: 90%; max-width: 1200px;">
+        <img src="http://tlworks.speedgabia.com/brand/jbl/JBL_EOCLand_Top_Img.jpg" alt="헤드 배너 1"
+            style="width: 100%; height: auto; display: block;">
+    </div>
+    <div style="background-color: white; color: black; text-align: center; padding: 20px 0; position: relative;">
+        <div
+            style="width: 50%; height: 4px; background-color: orange; margin: 0 auto; position: absolute; top: 0; left: 0; right: 0;">
+        </div>
+        <h1 style="font-size: 24px; margin: 0;">BLUETOOTH<sup>®</sup> AUDIO STREAMING AND CONTROL</h1>
+        <p style="font-size: 16px; margin: 10px 0 0 0;">Pair a Bluetooth device for audio streaming to and DSP control
+            of up to four units using the JBL Compact Connect app, available for iOS<sup>®</sup> and Android<sup>™</sup>
+            devices</p>
+    </div>
+
+
+    <div style="margin: 20px auto; width: 90%; max-width: 1200px;">
+        <img src="https://www.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw2f351b39/pdp/JBL_EON_COMPACT_Lifestyle_rooftop_DJ.jpg?sw=1356&sh=840"
+            alt="헤드 배너 2" style="width: 100%; height: auto; display: block;">
+        <div style="background-color: white; color: black; text-align: center; padding: 20px 0; position: relative; margin-top: 20px;">
+            <div style="width: 50%; height: 4px; background-color: orange; margin: 0 auto; position: absolute; top: 0; left: 0; right: 0;">
+            </div>
+            <h1 style="font-size: 24px; margin: 0;">BLUETOOTH<sup>®</sup> AUDIO STREAMING AND CONTROL</h1>
+            <p style="font-size: 16px; margin: 10px 0 0 0;">Pair a Bluetooth device for audio streaming to and DSP
+                control
+                of up to four units using the JBL Compact Connect app, available for iOS<sup>®</sup> and
+                Android<sup>™</sup>
+                devices</p>
+        </div>
+    </div>
+    
+
+    <div style="margin: 20px auto; width: 90%; max-width: 1200px;">
+        <img src="https://www.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw565cf452/pdp/JBL_EON_COMPACT_Lifestyle_Spinner_wShirt_BLURRED.jpg?sw=1356&sh=840"
+            alt="헤드 배너 2" style="width: 100%; height: auto; display: block;">
+        <div style="background-color: white; color: black; text-align: center; padding: 20px 0; position: relative;margin-top: 20px;">
+            <div
+                style="width: 50%; height: 4px; background-color: orange; margin: 0 auto; position: absolute; top: 0; left: 0; right: 0;">
+            </div>
+            <h1 style="font-size: 24px; margin: 0;">BLUETOOTH<sup>®</sup> AUDIO STREAMING AND CONTROL</h1>
+            <p style="font-size: 16px; margin: 10px 0 0 0;">Pair a Bluetooth device for audio streaming to and DSP
+                control
+                of up to four units using the JBL Compact Connect app, available for iOS<sup>®</sup> and
+                Android<sup>™</sup>
+                devices</p>
+        </div>
+    </div>
+
+    <div style="margin: 20px auto; width: 90%; max-width: 1200px;">
+        <img src="https://www.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw8ade0e02/pdp/JBL_EonOneCompact_lifestyle_image_Coffeeshop_singer.jpg?sw=1356&sh=840"
+            alt="헤드 배너 2" style="width: 100%; height: auto; display: block;">
+        <div style="background-color: white; color: black; text-align: center; padding: 20px 0; position: relative;margin-top: 20px;">
+            <div
+                style="width: 50%; height: 4px; background-color: orange; margin: 0 auto; position: absolute; top: 0; left: 0; right: 0;">
+            </div>
+            <h1 style="font-size: 24px; margin: 0;">BLUETOOTH<sup>®</sup> AUDIO STREAMING AND CONTROL</h1>
+            <p style="font-size: 16px; margin: 10px 0 0 0;">Pair a Bluetooth device for audio streaming to and DSP
+                control
+                of up to four units using the JBL Compact Connect app, available for iOS<sup>®</sup> and
+                Android<sup>™</sup>
+                devices</p>
+        </div>
+    </div>
+    
+
+    <div style="background-color: #333; color: white; text-align: center; padding: 10px 0;">
+        <div style="margin: 20px auto; width: 90%; max-width: 1200px;">
+            <img src="company_banner.jpg" alt="회사 소개 배너" style="width: 100%; height: auto; display: block;">
+        </div>
+        <p>&copy; 2024 HuemoNetwork. All Right Reserved.</p>
+    </div>
+</body>
+
+</html>
